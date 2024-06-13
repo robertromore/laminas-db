@@ -412,7 +412,7 @@ class Connection extends AbstractConnection
     {
         if (
             $name === null
-            && ($this->driverName === 'pgsql' || $this->driverName === 'firebird')
+            && ($this->driverName === 'pgsql' || $this->driverName === 'firebird' || $this->driverName === 'odbc')
         ) {
             return;
         }
